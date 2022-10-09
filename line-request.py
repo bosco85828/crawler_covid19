@@ -6,13 +6,14 @@ import sys
 import bs4
 import re 
 import TCH 
+from key import KEY
 UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
-
+key=KEY()
 url="https://notify-api.line.me/api/notify"
-code="5xuXzmLQ43Q6N3e5FSseyb"
-token="VxnJzHiMwmpERL3Fsvulho21PS70MhjiJE1G6cqPXQr"
-clientID="0U1fwMxACHi3TxjOSwH1XL"
-clintSecret="ikC2XlmLXUo0tCnuWA0rMGBWzPgSZLcbTSKWBPUKjE6"
+code=key.code
+token=key.token
+clientID=key.clientID
+clintSecret=key.clintSecret
 
 def NMM():
     url="https://www.nininono.co/products/%E9%BA%A5%E5%85%8B%E9%A2%A8"
